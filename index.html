@@ -1,3 +1,17 @@
+<!--
+    Proposta em JavaScript: alterar imagens de "Promoções" e "Mais visitados" no index.
+    A principio, minha ideia era alterar a cor dos produtos, simulando a visualização
+    do mesmo produto em cores diferentes, porém não achei nenhuma ferramenta online
+    que fizesse isso, e não quero ficar arriscando meu pc com photoshop crackeado.
+
+    Mudanças:
+    Primeiro, para usar o querySelector de cada uma das imagens no script sem
+    gerar conflitos com o CSS, adicionei nas div's de imagem,
+    Id "item1", "item2", etc. Como exemplo nas linhas 65 e 72.
+    Inicialmente o script estava no final do index.html, porém o código ficou
+    grande e coloquei no arquivo script.html.
+-->
+
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
@@ -48,28 +62,28 @@
             <h2>Promoções</h2>
 
             <div class="produtos">
-                <div class="item">
+                <div class="item" id="item1">
                     <img src="./imagens/pngwing.com (1).png " alt="Produto">
                     <h3>Camiseta Corrida</h3>
                     <p>Apartir de</p>
                     <p>R$ 20.00</p>
                 </div>                     
 
-                <div class="item">
+                <div class="item" id="item2">
                     <img src="./imagens/camiseta.png" alt="Produto">
                     <h3>Camiseta Preta</h3>
                     <p>Apartir de</p>
                     <p>R$ 25.00</p>
                 </div>
             
-                <div class="item">
+                <div class="item" id="item3">
                     <img src="./imagens/pngwing.com (2).png" alt="Produto">
                     <h3>Tênis Adidas</h3>
                     <p>Apartir de</p>
                     <p>R$ 30.00</p>
                 </div>
 
-                <div class="item">
+                <div class="item" id="item4">
                     <img src="./imagens/tenuspretop.png" alt="Produto">
                     <h3>Tênis Preto</h3>
                     <p>Apartir de</p>
@@ -82,28 +96,28 @@
             <h2>Mais Visitados</h2>
 
             <div class="produtos">
-                <div class="item">
+                <div class="item" id="item5">
                     <img src="./imagens/blusanike.png" alt="Produto">
                     <h3>Blusa Nike</h3>
                     <p>Apartir de</p>
                     <p>R$ 20.00</p>
                 </div>
             
-                <div class="item">
+                <div class="item" id="item6">
                     <img src="./imagens/tenis nike.png" alt="Produto">
                     <h3>Tênis Nike</h3>
                     <p>Apartir de</p>
                     <p>R$ 25.00</p>
                 </div>
             
-                <div class="item">
+                <div class="item" id="item7">
                     <img src="imagens/tenisadidass.png" alt="Produto">
                     <h3>Tênis Adidas</h3>
                     <p>Apartir de</p>
                     <p>R$ 30.00</p>
                 </div>
 
-                <div class="item">
+                <div class="item" id="item8">
                     <img src="imagens/tenis vans.png" alt="Produto">
                     <h3>Old Skool</h3>
                     <p>Apartir de</p>
@@ -240,7 +254,7 @@
                 <li><a href="./produtos.html">Produtos</a></li>
                 <li><a href="./login.html">Sua Conta</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="ADM.html">Admnistração</a></li>
+                <li><a href="adm.html">Admnistração</a></li>
 
                 </div>
                 <div class="footer-column">
@@ -283,4 +297,7 @@
 
         </footer>
     </body>
+    <script src="./script.js">
+    </script>
+
 </html>
