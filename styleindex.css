@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.header{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    grid-area: header;
+    background:  #c5bbb4;
+}
+
+.namepagina{
+    color: #2e2826;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;   
+    
+}
+
+header ul{
+    align-items: center;
+    margin: 0;
+    display: flex;
+    background-color:transparent;     
+    
+}
+
+
+header li{
+    display: inline-block;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #4a403d;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+.form {   
+    margin-left: auto;
+}
+
+.form input{
+    margin: 15px;
+    padding: 10px;
+    width: calc(100% - 204px);
+    min-width: 200px;
+    border: 2px solid #4a403d;
+    border-radius: 6px;
+}
+
+.form button {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a18a77;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+    width: 100px;
+    padding: 10px 10px;   
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color:  #9f7d60;
+}
+
+/*==== CABEÇALHO CORRETO DAQUI PARA CIMA ====*/
+
+/*aqui em baixo é alguns produtos*/
+.main{
+    grid-area: main;
+    background-color: #ffffff;
+ 
+}
+
+.main h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.produtos{
+    text-align: center;
+}
+
+
+.item{    
+    display: inline-block;
+    background-color: #f5e8df;
+    padding: 10px 2px;
+    width: calc(33.33% - 46px);
+    min-width: 200px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 285px;
+}
+
+.item img {
+    max-width: 50%;
+    height: 150px}
+
+.item h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #2e2826;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.item p {
+    color: #2e2826;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+
+/*aqui em baixo é as imagens de promoção*/
+.promocoesimg    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.promocao-item {
+    flex: 1;
+    text-align: center;
+    padding: 0px 0px;
+
+    
+}
+
+.promocao-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*Propagando Horizontal*/
+.propaganda-hori{
+    text-align: center;
+    max-width: 100%;
+}
+
+.propaganda-grande {
+    text-align: center;
+}
+
+
+
+
+
+
+/*==== FOOTER CORRETO DAQUI PARA BAIXO ====*/
+
+footer .direitos{
+    background-color: #a69a90;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a69a90;
+    color: #2e2826;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.footer-column a {
+    text-decoration: none;
+    color: #000029;
+    
+}
+
+.social-icons a {
+    color: #000029;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+
+.social-icons a:hover {
+    color: #ae723a; 
+}
+
+
+/*====== Responsivo ======*/
+@media (max-width: 981px) {
+       
+    header li {
+        margin: 5px;
+        font-size: 16px;
+    }
+    .form input {
+        width: 60%;
+    }
+    .form button {
+        width: 80px;
+    }
+    .main h2 {
+        font-size: 24px;
+    }
+    
+    .item h3 {
+        font-size: 18px;
+    }
+    .item p {
+        font-size: 14px;
+    }
+    .promocoesimg {
+        flex-direction: column;
+    }
+    .promocao-item img {
+        max-width: 100%;
+    }
+    .propaganda-grande{
+        display: none;
+    }
+    .propaganda-hori{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .namepagina {
+        font-size: 20px;
+    }
+    .header li {
+        font-size: 14px;
+    }
+    .form input {
+        padding: 5px;
+    }
+    .form button {
+        padding: 5px;
+        width: 70px;
+    }
+    
+    .item h3 {
+        font-size: 16px;
+    }
+    .item p {
+        font-size: 12px;
+    }
+    .promocoesimg {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .namepagina {
+        font-size: 20px;
+    }
+    .header li {
+        font-size: 14px;
+    }
+    .form input {
+        display: none;
+    }
+    .form button {
+        display: none;
+    }
+    
+    .item h3 {
+        font-size: 16px;
+    }
+    .item p {
+        font-size: 12px;
+    }
+    .promocoesimg {
+        margin: 10px 0;
+    }
+    .footer-container{
+        font-size: 10px;
+    }
+}
+
+
+
+
+

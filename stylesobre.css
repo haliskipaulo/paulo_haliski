@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.header{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    grid-area: header;
+    background:  #c5bbb4;
+}
+
+.namepagina{
+    color: #2e2826;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;   
+    
+}
+
+header ul{
+    align-items: center;
+    margin: 0;
+    display: flex;
+    background-color:transparent;     
+    
+}
+
+
+header li{
+    display: inline-block;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #4a403d;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+.form {   
+    margin-left: auto;
+}
+
+.form input{
+    margin: 15px;
+    padding: 10px;
+    width: calc(100% - 204px);
+    min-width: 200px;
+    border: 2px solid #4a403d;
+    border-radius: 6px;
+}
+
+.form button {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a18a77;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+    width: 100px;
+    padding: 10px 10px;   
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color:  #9f7d60;
+}
+
+/*==== CABEÇALHO CORRETO DAQUI PARA CIMA ====*/
+
+body{
+    background-color: rgb(255, 255, 255);
+
+}
+
+main{ 
+
+    width: 80%; 
+    margin: auto; 
+    border: radius 30px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+} 
+
+main h1{ 
+    color:#000029;
+    text-align: center; 
+
+} 
+main h3{ 
+    color: #2e2826;
+    margin:0 auto;
+    text-align: center;
+}
+#block{ 
+    box-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 50px; 
+    padding-right: 60px; 
+    padding-inline-start: 0%; 
+    border-radius: 17px; 
+    border: 1px; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color:#e3dcd5;
+    width: 550px; 
+    height: 200px; 
+    margin: 0 auto;  
+    color: #4a403d; 
+    text-align: justify;
+
+} 
+#block2{ 
+    box-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 50px; 
+    padding-right: 60px; 
+    padding-inline-start: 0%; 
+    border-radius: 17px; 
+    border: 1px; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color:#e3dcd5;
+    width: 550px; 
+    height: 200px; 
+    margin: 0 auto;  
+    color: #4a403d; 
+    text-align: justify;
+} 
+#block3{ 
+    box-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 50px; 
+    padding-right: 60px; 
+    padding-inline-start: 0%; 
+    border-radius: 17px; 
+    border: 1px; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color:#e3dcd5;
+    width: 550px; 
+    height: 200px; 
+    margin: 0 auto;  
+    color: #4a403d; 
+    text-align: justify;
+}
+
+
+#block4{ 
+    box-align: center;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 50px; 
+    padding-right: 60px; 
+    padding-inline-start: 0%; 
+    border-radius: 17px; 
+    border: 1px; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color:#e3dcd5;
+    width: 550px; 
+    height: 200px; 
+    margin: auto; 
+    color: #4a403d; 
+    text-align: justify;
+}
+
+/*==== FOOTER CORRETO DAQUI PARA BAIXO ====*/
+
+footer .direitos{
+    background-color: #a69a90;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a69a90;
+    color: #2e2826;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.footer-column a {
+    text-decoration: none;
+    color: #000029;
+    
+}
+
+.social-icons a {
+    color: #000029;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+
+.social-icons a:hover {
+    color: #ae723a; 
+}
+
+/*====== Responsivo ======*/
+@media (max-width: 981px) {
+       
+    header li {
+        margin: 5px;
+        font-size: 16px;
+    }
+    .form input {
+        width: 60%;
+    }
+    .form button {
+        width: 80px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .namepagina {
+        font-size: 20px;
+    }
+    .header li {
+        font-size: 14px;
+    }
+    .form input {
+        padding: 5px;
+    }
+    .form button {
+        padding: 5px;
+        width: 50px;
+    }
+    
+}
+
+@media (max-width: 838px) {
+   
+    .form input {
+        padding: 5px;
+    }
+    .form button {
+        padding: 5px;
+        width: 50px;
+    }
+    
+}
+
+@media (max-width: 798px) {
+    .namepagina {
+        font-size: 20px;
+    }
+    .header li {
+        font-size: 14px;
+    }
+    .form input {
+        display: none;
+    }
+    .form button {
+        display: none;
+    }
+    
+    
+    .footer-container{
+        font-size: 10px;
+    }
+}
+
+
+

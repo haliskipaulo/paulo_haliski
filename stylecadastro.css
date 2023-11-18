@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.header{
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    grid-area: header;
+    background:  #c5bbb4;
+}
+
+.namepagina{
+    color: #2e2826;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;   
+    
+}
+
+header ul{
+    align-items: center;
+    margin: 0;
+    display: flex;
+    background-color:transparent;     
+    
+}
+
+#cadastrar {
+    width: 100%;
+}
+
+header li{
+    display: inline-block;
+    flex-grow: 1;
+    font-weight: bold;
+    color: #4a403d;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+.form {   
+    margin-left: auto;
+}
+
+.form input{
+    margin: 15px;
+    padding: 10px;
+    width: calc(100% - 204px);
+    min-width: 200px;
+    border: 2px solid #4a403d;
+    border-radius: 6px;
+}
+
+.form button {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a18a77;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+    width: 100px;
+    padding: 10px 10px;   
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color:  #9f7d60;
+}
+
+#botaologin {
+    float: right;
+    padding: 10px 100px;
+
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 50%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color:#e3dcd5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+main h1 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+}
+
+p {
+    color: #000000;
+    font-size: 16px;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+input {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 12px;
+    border: 2px solid #0000003b;
+    border-radius: 7px;
+    margin: 8px;
+}
+
+#nome, #email, #telefone{
+    flex-basis: 600px;
+}
+
+#senha, #confirmarSenha{            
+    flex-basis: 250px;
+}
+
+main button {
+    flex-grow: 1;
+    background-color: #a18a77;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    flex-basis: 100px;
+    border-radius: 7px;
+}
+
+button[type="reset"]{            
+    background-color:  #756c5d;
+}
+
+button:hover {
+    background-color: #9f7d60;
+}
+
+button[type="reset"]:hover{            
+    background-color: #ac7727;
+}
+
+footer .direitos{
+    background-color: #a69a90;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a69a90;
+    color: #2e2826;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.footer-column a {
+    text-decoration: none;
+    color: #000029;
+    
+}
+
+.social-icons a {
+    color: #000029;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+
+.social-icons a:hover {
+    color: #ae723a; 
+}
+
+@media (max-width: 981px) {
+       
+    header li {
+        margin: 5px;
+        font-size: 16px;
+    }
+    .form input {
+        width: 60%;
+    }
+    .form button {
+        width: 80px;
+    }
+    .main h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .namepagina {
+        font-size: 20px;
+    }
+    .header li {
+        font-size: 14px;
+    }
+    .form input {
+        padding: 5px;
+    }
+    .form button {
+        padding: 5px;
+        width: 70px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 660px) {
+    .namepagina {
+        font-size: 20px;
+    }
+    .header li {
+        font-size: 14px;
+    }
+    .form input {
+        display: none;
+    }
+    .form button {
+        display: none;
+    }
+
+    .footer-container{
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
