@@ -88,4 +88,26 @@ function trocaImagem() {
     };
 }
 
+function mudarEstilo() {
+    const confirma = window.confirm("Deseja alterar o estilo do site?");
+    var mainElement = document.querySelector('main');
+    var headerElement = document.querySelector('header');
+    
+    if (confirma) {
+        mainElement.style.cssText = `
+        background-color: #c5bbb4;
+        `;
+        headerElement.style.cssText = `
+        background-color: #c99e7f;
+        `;
+    } else {
+        mainElement.style.cssText = `
+        background-color: white;
+        `;
+        headerElement.style.cssText = `
+        background-color: #c5bbb4;
+        `;
+    }
+}
+
 trocaImagem();

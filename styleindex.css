@@ -46,6 +46,18 @@ header li{
     font-size: 17px;
 }
 
+.botao {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #a18a77;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: 15px;
+    width: 100px;
+    padding: 10px 10px;   
+    cursor: pointer;
+}
+
 .form {   
     margin-left: auto;
 }

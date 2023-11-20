@@ -7,9 +7,12 @@
     Mudanças:
     Primeiro, para usar o querySelector de cada uma das imagens no script sem
     gerar conflitos com o CSS, adicionei nas div's de imagem,
-    Id "item1", "item2", etc. Como exemplo nas linhas 65 e 72.
+    Id "item1", "item2", etc. Como exemplo nas linhas 70 e 77.
     Inicialmente o script estava no final do index.html, porém o código ficou
     grande e coloquei no arquivo script.html.
+
+    Criei uma simples função que troca a tonalidade de fundo do index, apenas
+    clickando no botão "alterar estilo" no canto esquerdo da header.
 -->
 
 <!DOCTYPE html>
@@ -30,6 +33,8 @@
             <div class="namepagina">
                 <h1>SportStyle</h1>
             </div>
+
+            <span class="botao"><button onclick="mudarEstilo()">Alterar Estilo</button></span>
 
             <ul>                
                 <a href="index.html"><li>Home</li></a>
